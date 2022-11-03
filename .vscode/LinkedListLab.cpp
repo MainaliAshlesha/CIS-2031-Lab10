@@ -39,14 +39,26 @@ void prepend(List* &list, string val){
 //This function removes the first item from the list
 void removeFirst(List* &list){
     //❓ Lab Question 9
-    //YOUR CODE HERE
+    void removeFirst(List*&list){
+        Lits*turnip= List; 
+        list= list->next;
+        delete turnip;
 }
 
 //This function returns true if the list haystck
 //contains the value needle, and false otherwise.
 bool contains(List* haystack, string needle){
     //❓ Lab Question 10
-    //YOUR CODE HERE
+    if(haystack!=NULL){
+        while(haystack!= NULL){
+            if(haystack->value==needle ){
+                return true;
+            }
+            else{
+                haystack = haystack-> next;
+            }
+        }
+    }
     return false;
 }
 
